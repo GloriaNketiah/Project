@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student's Roster</title>
+   <link href="style.css" rel="stylesheet"/>
+ 
+</head>
+
+<body>
+  <!--- Banner --->
+  <div class="banner">
+    <div class="banner__content">
+      <div class="banner__text">
+        <strong>Reminder:</strong> Click on the "button" for more information.
+      </div>
+      <button class="banner__close" type="button">
+        <span class="material-icons">
+          close
+        </span>
+      </button>
+    </div>
+  </div>
+  <br>
+  <!--- Navigation Bar --->
+  <div class="topnav">
+    <a class="active" href="https://waukeganil.infinitecampus.org/campus/waukegan.jsp">Infinite Campus</a>
+    <a href="https://classroom.google.com/">Google Classroom</a>
+    <a href="https://whs.wps60.org/">Waukegan High School</a>
+    <div class="search-container">
+      <form>
+        <input type="text" id="myInput" Onkeyup="myFunction2()"  placeholder= "Search.." name="search">
+        <button type="submit">Submit</button>
+      </form>
+    </div>    
+  </div>
+  <br>
+  <h1>Graduating Class Roster</h1>
+  <br>   
+  <!--- Table for Roster --->
+  <table id="myTable">
+    <tr>
+      <th>Student Photo</th>
+      <th>Name</th>
+      <th>Student Email</th>
+      <th>More</th>
+      <th>Remove</th>
+    </tr>
+    <tr>
+      <td>
+        <div class= "image">
+          <img src="boy1.PNG" alt="Student Photo">
+        </div>
+      </td>
+      <td>John Doe</td>
+      <td>johndoe@example.com</td>
+      <td><button class="button" class="button" href="#" onclick="show('popup')">More</button></td>
+      <td><button class="button" onclick="myFunction()">Remove</button></td>
+    </tr>
+    <tr>
+      <td>
+        <div class= "image">
+          <img src="girl1.PNG" alt="Student Photo">
+        </div>
+      </td>
+      <td>Jane Smith</td>
+      <td>janesmith@example.com</td>
+      <td><button class="button" class="button" href="#" onclick="show('popup')">More</button></td>
+      <td><button class="button" onclick="myFunction()">Remove</button></td>
+    </tr>
+    <tr>
+      <td>
+        <div class= "image">
+          <img src="girl2.PNG" alt="Student Photo">
+        </div>
+      </td>
+      <td>Michel Johnson</td>
+      <td>micheljohnson@example.com</td>
+      <td><button class="button" class="button" href="#" onclick="show('popup')">More</button></td>
+      <td><button class="button" onclick="myFunction()">Remove</button></td>
+    </tr>
+    
+  </table>
+  <!--- Popup information --->
+  <div class="popup" id="popup">
+    <p>Course: Compuster Science </p>
+    <p>GPA: 3.89 <b>4th Year</b> and <b>National Honor's Societey</b> pseudo-classes.</p>
+    <p>Contact department chair for more information</p>
+    <a href="#" onclick="hide('popup')">Close</a>
+  </div>
+
+  <br>
+  <!--- Section code --->
+  <section>
+   
+    <div class= "gifcontainer">
+      <img src= "giphy1.gif" alt="graduation">
+       <p class="textcontainer">The Sky is the limit!!<p>
+    </div>
+    
+  </section>
+
+  <script src="script.js"></script>
+</body>
+  
+
+</html>

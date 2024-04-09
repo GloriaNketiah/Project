@@ -1,0 +1,194 @@
+html{
+  margin: 5px;
+}
+body {
+  margin: 0%;
+}
+/* style for banner */
+
+.banner {
+  background: #15cbaa;
+}
+
+.banner__content {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.banner__text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: "Quicksand", sans-serif;
+}
+
+.banner__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.banner__text,
+.banner__close > span {
+  color: #ffffff;
+}
+
+/* Navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #a59c9c;
+}
+
+/* Style for links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style for "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style for search box inside the navigation bar */
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+/* style for table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table, tr, th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+th {
+  background: #a59c9c;
+}
+.image {
+  width: 150px;
+  height: 150px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+td{
+  padding: 15px;
+  text-align: center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #FFF;
+  border: 3px solid #f5c2c2;
+  z-index: 20;
+}
+
+#popup:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
+}
+
+#popup:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+}
+
+
+button:hover {
+  background-color: #f5c2c2;
+  color: #FFF;
+  border: 3px solid #f5c2c2;
+  transition: all 0.3s ease 0s;
+}
+
+/* style for section and gif */
+
+section{
+  background: #15cbaa;
+  
+}
+
+.gifcontainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+
+.textcontainer {
+  text-align: center;
+  color: #fff;
+  font-size: x-large;
+  text-shadow: 0 0 10px #000;
+
+}
+
+.gifcontainer img {
+  width: 100%;
+  height: 250px;
+  transition: all 0.3s ease 0s;
+  
+}
