@@ -94,6 +94,11 @@ h1 {
   background: #ccc;
 }
 
+.formname {
+  display: flex;
+  align-items: center;
+}
+
 /* style for table */
 table {
   width: 100%;
