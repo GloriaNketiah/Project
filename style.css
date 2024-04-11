@@ -93,10 +93,11 @@ h1 {
 .topnav .search-container button:hover {
   background: #ccc;
 }
-
+/* Style for form */
 .formname {
   display: flex;
   align-items: center;
+  float: right;
 }
 
 /* style for table */
