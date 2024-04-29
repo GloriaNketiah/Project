@@ -41,9 +41,9 @@
   </div>
   <br>
   <div class= "formname">
-    <form>
+    <form action= "" id="nameForm">
       <input type="text" id="Name" placeholder="Name" name="Name">
-      <button type="submit">Submit</button>
+      <button>Submit</button>
     </form>
   </div>
   <br>
@@ -112,22 +112,6 @@
     
   </section>
 
-   <!-- JS for Firebase -->
-	<script type="module">
-  	// setup firebase app and firestore database
-  	import { getFirestore } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js";
-  	const firebaseConfig = {
-    apiKey: "AIzaSyBIPKT-Ay1J1xTCPlnfEJ-BKpa1hCFjkyQ",
-      authDomain: "project-33c8a.firebaseapp.com",
-      projectId: "project-33c8a",
-      storageBucket: "project-33c8a.appspot.com",
-      messagingSenderId: "142812338420",
-      appId: "1:142812338420:web:a052fb142ba6633fe0e6a1"
-    };
-  	const app = firebase.initializeApp(firebaseConfig);
-  	var db = getFirestore(app);
-  	console.log("firebase setup complete!");
-	</script>
 
   <script src="script.js"></script>
 </body>

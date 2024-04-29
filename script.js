@@ -1,3 +1,33 @@
+// set up firebase app and firestore database
+const firebaseConfig = {
+  apiKey: "AIzaSyBIPKT-Ay1J1xTCPlnfEJ-BKpa1hCFjkyQ",
+    authDomain: "project-33c8a.firebaseapp.com",
+    projectId: "project-33c8a",
+    storageBucket: "project-33c8a.appspot.com",
+    messagingSenderId: "142812338420",
+    appId: "1:142812338420:web:a052fb142ba6633fe0e6a1"
+  };
+const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+console.log("firebase setup complete!");
+
+let nameForm = document.getElementById("nameForm");
+
+  nameForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let Name = document.getElementById("Name");
+  if (Name.value == "") {
+    alert("Please enter a name");
+  } else {
+    alert ("Name is suceessflly submitted");
+    console.log(Name.value);
+    Name.value == "";
+    db.collection("Students").add({
+      Name: Name.value,
+    });
+  }
+});
+
 // JS code for banner
 document.querySelector(".banner__close").addEventListener("click", function () {
   this.closest(".banner").style.display = "none";
