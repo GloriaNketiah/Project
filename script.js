@@ -1,4 +1,4 @@
-// set up firebase app and firestore database
+// JS code to set up firebase app and firestore database
 const firebaseConfig = {
   apiKey: "AIzaSyBIPKT-Ay1J1xTCPlnfEJ-BKpa1hCFjkyQ",
     authDomain: "project-33c8a.firebaseapp.com",
